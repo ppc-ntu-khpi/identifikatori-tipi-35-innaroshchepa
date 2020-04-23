@@ -10,6 +10,9 @@ package domain;
  * @author Инна
  */
 public class Exercise {
+    public static String Calculate(int R) {
+    return "Число "+R+" в двоичной системе: "+CalculateBinarySystem(R)+"\n\r\n" + "восьмеричной системе: "+CalculateOctalSystem(R)+"\n\r\n" + "в шестнадцатеричной системе: "+CalculateHexadecimalSystem(R);
+    }
     /**
      * A method that converts a six-digit number represented by a decimal number into a binary system
      * @param R integer
@@ -34,3 +37,4 @@ public class Exercise {
     public static String CalculateHexadecimalSystem(int R){
         return (String) (Integer.toHexString((int) R));
     }
+}
